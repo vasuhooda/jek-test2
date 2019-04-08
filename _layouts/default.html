@@ -1,6 +1,22 @@
-{% include head.html %}
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
 
-<!-- Add your site or application content here -->
-<p>{{ content }}</p>
+  {% include head.html %}
 
-{% include footer.html %}
+  <body>
+    <div id="shadow"></div>
+
+      {% include header.html %}
+      {% include aside.html %}
+
+    <main class="content-wrapper blog-content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>
